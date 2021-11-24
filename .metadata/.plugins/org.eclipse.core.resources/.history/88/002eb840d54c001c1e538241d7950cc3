@@ -1,0 +1,62 @@
+package utilidades;
+
+import utilidades.Data;
+
+public class Conta {
+	private int nroConta;
+	private double saldo;
+	private Data dataAbertura;
+	private Correntista[] correntistas;
+	
+	//Construtor:
+	public Conta(int nroConta, double saldo, Data dataAbertura, Correntista[] correntistas) {
+		this.nroConta = nroConta;
+		this.saldo = saldo;
+		this.dataAbertura = dataAbertura;
+		this.correntistas = correntistas;
+	}
+	
+	public boolean fazDeposito (double valor) {
+		if (valor <= 0 || valor > 100000)
+			return false;
+		
+		saldo += valor;
+		
+		return true;
+	}
+	
+	public boolean fazSaque (double valor) {
+		if (valor <= 0 || valor > saldo)
+			return false;
+		
+		saldo -= valor;
+		
+		return true;
+	}
+	
+	public boolean fazTransferencia (Conta destino, double valor) {
+		if (this.fazSaque(valor) == true) {
+			destino.fazDeposito(valor);
+			return true;
+		}
+		
+		return false;
+	}
+	
+	// Métodos acessadores e modificadores:
+	public int getNroConta() {
+		return nroConta;
+	}
+	
+	public void setNroConta(int nroConta) {
+		this.nroConta = nroConta;
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+}

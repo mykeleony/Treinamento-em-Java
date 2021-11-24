@@ -1,0 +1,22 @@
+package utilidades;
+
+public class Conta {
+	private int nroConta;
+	private double saldo;
+	
+	public int getNroConta() {
+		return nroConta;
+	}
+	
+	public void setNroConta(int nroConta) {
+		this.nroConta = nroConta;
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+}

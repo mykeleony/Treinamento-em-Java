@@ -1,0 +1,10 @@
+package utilidades;
+import utilidades.Data;
+
+public class Registro_Contas {
+
+	public static void main(String[] args) {
+		Data hoje = new Data();
+	}
+
+}

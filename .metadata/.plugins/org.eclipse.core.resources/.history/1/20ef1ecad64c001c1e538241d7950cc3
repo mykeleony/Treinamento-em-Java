@@ -1,0 +1,19 @@
+package utilidades;
+import utilidades.Data;
+
+public class Registro_Contas {
+
+	public static void main(String[] args) {
+		Date hoje = new Date();
+		
+		Correntista [] correntistas = new Correntista[2];
+		
+		correntistas[0] = new Correntista("501.437.978-83", "Myke Leony dos Santos Amorim");
+		correntistas[1] = new Correntista("012.345.678-90", "Reinaldo Gostosa Junior");
+		
+		Conta minha = new Conta(8, 8000, "10/05/2002", correntistas);
+		
+		System.out.println(minha.toString());
+	}
+
+}

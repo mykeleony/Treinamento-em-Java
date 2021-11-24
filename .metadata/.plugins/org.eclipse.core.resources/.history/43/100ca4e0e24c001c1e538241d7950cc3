@@ -1,0 +1,7 @@
+import java.util.Calendar;
+
+public class Aluno {
+	private int matricula, celular;
+	private String nome;
+	private Calendar nascimento = Calendar.getInstance();
+}

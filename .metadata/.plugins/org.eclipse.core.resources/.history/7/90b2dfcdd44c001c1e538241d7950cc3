@@ -1,0 +1,17 @@
+package utilidades;
+import utilidades.Data;
+
+public class Registro_Contas {
+
+	public static void main(String[] args) {
+		Data hoje = new Data(24, 11, 2021);
+		
+		Correntista c1 = new Correntista("501.437.978-83", "Myke Leony dos Santos Amorim");
+		Correntista c2 = new Correntista("012.345.678-90", "Reinaldo Gostosa Junior");
+		
+		Correntista [] correntistas = new Correntista[2];
+		
+		
+	}
+
+}
