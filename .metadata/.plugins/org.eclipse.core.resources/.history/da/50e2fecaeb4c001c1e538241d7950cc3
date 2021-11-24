@@ -1,0 +1,50 @@
+public class Professor {
+	private String nome, endereco, disciplina;
+	private int celular;
+	
+	public Professor(String nome, String endereco, String disciplina, int celular) {
+		this.nome = nome;
+		this.endereco = endereco;
+		this.disciplina = disciplina;
+		this.celular = celular;
+	}
+	
+	public void imprimeDados() {
+		System.out.println("Professor [nome=" + nome + ", endereco=" + endereco + ", disciplina=" + disciplina + ", celular="
+				+ celular + "]");
+	}
+
+
+
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public String getEndereco() {
+		return endereco;
+	}
+	
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+	
+	public String getDisciplina() {
+		return disciplina;
+	}
+	
+	public void setDisciplina(String disciplina) {
+		this.disciplina = disciplina;
+	}
+	
+	public int getCelular() {
+		return celular;
+	}
+	
+	public void setCelular(int celular) {
+		this.celular = celular;
+	}
+}
