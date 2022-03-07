@@ -5,8 +5,6 @@ import design_patterns.strategy.comportamentos_de_pato.voar.CapacidadeDeVoar;
 
 public abstract class Pato {
     String cor;
-  
-    // Estratégias para os comportamentos altamente variáveis "Capacidade de Voar" e "Capacidade de Grasnar":
     CapacidadeDeGrasnar capacidadeDeGrasnar;
     CapacidadeDeVoar capacidadeDeVoar;
 
